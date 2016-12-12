@@ -38,7 +38,7 @@ app.get("/:timeData", (req, res) => {
   res.end(JSON.stringify(response));
 });
 
-app.listen(8080, () => {
+app.listen(80, () => {
   console.log('Example app listening on port 8080!');
 });
 
