@@ -1,14 +1,26 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
-  }
+    "express": "^4.14.0",
+    "month": "^2.0.1",
+    "pug": "^0.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtone/timestamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/richtone/timestamp/issues"
+  },
+  "homepage": "https://github.com/richtone/timestamp#readme"
 }
