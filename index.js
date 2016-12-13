@@ -7,8 +7,10 @@ var app = express();
 
 /*
 app.set("view engine", "jade");
-app.set('views', path.join(__dirname, 'templates'));
+app.set('views', path.join(__dirname, '/templates'));
 */
+
+app.set('port', (process.env.PORT || 8080));
 
 app.get('/', (req, res) => {
   res.end("Timestamp microservice. You're welcome!");
@@ -38,7 +40,7 @@ app.get("/:timeData", (req, res) => {
   res.end(JSON.stringify(response));
 });
 
-app.listen(8080, () => {
-  console.log('Example app listening on port 8080!');
+app.listen(app.get("port"), () => {
+  console.log('Example app listening on port',app.get('port'),'!');
 });
 
