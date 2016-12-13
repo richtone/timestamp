@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, '/templates'));
 app.set('port', (process.env.PORT || 8080));
 
 app.get('/', (req, res) => {
-  res.end("Timestamp microservice. You're welcome!");
+  res.end("Timestamp microservice running on port " + process.env.PORT +". You're welcome!");
 });
 
 function setResponse(date) {
